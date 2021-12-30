@@ -11,9 +11,10 @@ add_subdirectory(dependencies/json-cpp)
 
 option(RILEY_JSONCPP_UTILS_WITH_TESTS "Build and run RileyJsonCppUtils test executables" ON)
 
-# add_subdirectory(src/main)
+add_subdirectory(src/main)
 
 if (${RILEY_JSONCPP_UTILS_WITH_TESTS})
 	enable_testing()
-	add_subdirectory(src/test)
+	add_subdirectory(src/test/json_tests)
+	add_subdirectory(src/test/wander_tests)
 endif()
