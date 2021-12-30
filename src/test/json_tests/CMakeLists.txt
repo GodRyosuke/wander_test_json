@@ -11,7 +11,7 @@ target_include_directories(wander_lib_tests PUBLIC "${PROJECT_SOURCE_DIR}/includ
 add_custom_command(
 	TARGET wander_lib_tests
 	COMMAND ${CMAKE_COMMAND} -E copy_directory
-		${PROJECT_SOURCE_DIR}/src/test/test_resources $<TARGET_FILE_DIR:wander_lib_tests>/test_resources
+		${PROJECT_SOURCE_DIR}/src/test/json_tests/test_resources $<TARGET_FILE_DIR:wander_lib_tests>/test_resources
 )
 
 
